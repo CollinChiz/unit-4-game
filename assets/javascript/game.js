@@ -10,6 +10,7 @@ $(document).ready(function() {
     // crystal numbers
     var crystalMax = 12;
     var crystalMin = 1;
+
     // red crystal
     var redCrystal = redCrystalFromRange(crystalMin, crystalMax);
     function redCrystalFromRange(min,max) {
@@ -32,6 +33,7 @@ $(document).ready(function() {
     }
 
       console.log(redCrystal, blueCrystal, yellowCrystal, greenCrystal);
+
     // button clicks
     $("#redCrystal").click(function() {
         $("#totalScore").html(redCrystal);
@@ -45,5 +47,6 @@ $(document).ready(function() {
     $("#greenCrystal").click(function() {
         $("#totalScore").html(greenCrystal);
     });
+    var totalScore = []
     });
     
