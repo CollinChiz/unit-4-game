@@ -3,4 +3,5 @@
 }
 .col-md-6, .col-md-3, .col-md-1 {
     border: 1px solid black;
+    margin-top: 10px;
 }

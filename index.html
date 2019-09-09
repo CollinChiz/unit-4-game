@@ -1,5 +1,5 @@
 <!-- 
-    1. generate random global number at start of document 19-120
+     1. generate random global number at start of document 19-120
      2. Generate 4 random numbers for each chrystal 1 - 12 
      3. when click chrystal append its value
      4. when cliked string of chrystals add their values
@@ -12,6 +12,14 @@
         <title>Crystal Collector</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        
+        <script src="assets/javascript/game.js"></script>
+
     </head>
     <body>
         <div class="title">
@@ -35,7 +43,7 @@
 
             <div class="row">
                 <div class="col-md-3">
-                    <p>12</p>
+                    <p id="globalNumber">12</p>
                 </div>
                 <div class="col-md-1">
                     <p>wins: losses:</p>
