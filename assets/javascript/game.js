@@ -37,54 +37,102 @@ $(document).ready(function() {
       console.log(redCrystal, blueCrystal, yellowCrystal, greenCrystal);
 
       $("#totalScore").attr("data-sum", 0);
-      
+      var newSum = $("#totalScore").data("sum");
 
     // button clicks
     $("#redCrystal").click(function() {
         // $("#totalScore").html(redCrystal);
 
-        var newSum = $("#totalScore").data("sum");
+        // var newSum = $("#totalScore").data("sum");
         newSum += redCrystal;
         $("#totalScore").data("sum", newSum);
         $("#totalScore").html(newSum);
+
+        if(newSum === globalNumber) {
+            wins++;
+            console.log(wins);
+            $("#wins").html("Wins: " + wins);  
+            globalNumberFromRange()
+            $("#globalNumber").html(globalNumber);  
+            console.log(globalNumber);
+        }
+        if(newSum > globalNumber){
+            losses++;
+            console.log(losses);
+            $("#losses").html("Losses: " + losses);
+        }
 
         console.log("red crystal: ", redCrystal);
         console.log("total score: ", newSum);
     });
     $("#blueCrystal").click(function() {
         // $("#totalScore").html(blueCrystal);
-        var newSum = $("#totalScore").data("sum");
+        // var newSum = $("#totalScore").data("sum");
         newSum += blueCrystal;
         $("#totalScore").data("sum", newSum);
         $("#totalScore").html(newSum);
+
+        if(newSum === globalNumber) {
+            wins++;
+            console.log(wins);
+            $("#wins").html("Wins: " + wins);
+        }
+        if(newSum > globalNumber){
+            losses++;
+            console.log(losses);
+            $("#losses").html("Losses: " + losses);
+        }
 
         console.log("blue crystal: ", blueCrystal);
         console.log("total score: ", newSum);
     });
     $("#yellowCrystal").click(function() {
         // $("#totalScore").html(yellowCrystal);
-        var newSum = $("#totalScore").data("sum");
+        // var newSum = $("#totalScore").data("sum");
         newSum += yellowCrystal;
         $("#totalScore").data("sum", newSum);
         $("#totalScore").html(newSum);
+
+        if(newSum === globalNumber) {
+            wins++;
+            console.log(wins);
+            $("#wins").html("Wins: " + wins);
+        }
+        if(newSum > globalNumber){
+            losses++;
+            console.log(losses);
+            $("#losses").html("Losses: " + losses);
+        }
 
         console.log("yellow crystal: ", yellowCrystal);
         console.log("total score: ", newSum);
     });
     $("#greenCrystal").click(function() {
         // $("#totalScore").html(greenCrystal);
-        var newSum = $("#totalScore").data("sum");
+        // var newSum = $("#totalScore").data("sum");
         newSum += greenCrystal;
         $("#totalScore").data("sum", newSum);
         $("#totalScore").html(newSum);
+
+        if(newSum === globalNumber) {
+            wins++;
+            console.log(wins);
+            $("#wins").html("Wins: " + wins);
+        }
+        if(newSum > globalNumber){
+            losses++;
+            console.log(losses);
+            $("#losses").html("Losses: " + losses);
+        }
 
         console.log("greenCrystal: ", greenCrystal);
         console.log("total score: ", newSum);
     });
     
     if(newSum === globalNumber) {
-        wins++
-        console.log(wins)
+        wins++;
+        console.log(wins);
+        $("#wins").html(wins);
     }
 
     });

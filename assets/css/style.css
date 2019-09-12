@@ -1,7 +1,24 @@
-.row {
-    /* border: 1px solid black; */
-}
+
 .col-md-6, .col-md-3, .col-md-1 {
     border: 1px solid black;
     margin-top: 10px;
+    text-align: center;
+}
+h1 {
+    padding: 25px;
+    text-align: center;  
+}
+#instructions {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+#space {
+    border:none;
+}
+img {
+    width: 70px;
+    height: 80px;
+    text-align: center;
+    
 }
