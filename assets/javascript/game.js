@@ -52,14 +52,17 @@ $(document).ready(function() {
             wins++;
             console.log(wins);
             $("#wins").html("Wins: " + wins);  
-            globalNumberFromRange()
-            $("#globalNumber").html(globalNumber);  
             console.log(globalNumber);
+            $("#globalNumber").html(globalNumber);  
+            globalNumberFromRange()
         }
         if(newSum > globalNumber){
             losses++;
             console.log(losses);
             $("#losses").html("Losses: " + losses);
+            $("#globalNumber").html(globalNumber);
+            globalNumberFromRange()
+            console.log(globalNumber);
         }
 
         console.log("red crystal: ", redCrystal);
